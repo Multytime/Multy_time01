@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ur">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile - MultyTime</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+padding:25px;
+
+}
+
+.profile{
+
+max-width:480px;
+margin:auto;
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+}
+
+.avatar{
+
+width:140px;
+height:140px;
+border-radius:50%;
+border:5px solid #1976D2;
+display:block;
+margin:0 auto;
+object-fit:cover;
+
+}
+
+h1{
+
+text-align:center;
+margin-top:15px;
+color:#1976D2;
+
+}
+
+p{
+
+text-align:center;
+color:#666;
+margin-bottom:20px;
+
+}
+
+label{
+
+font-weight:bold;
+
+}
+
+input{
+
+width:100%;
+padding:12px;
+margin-top:8px;
+margin-bottom:18px;
+border-radius:10px;
+border:1px solid #ccc;
+
+}
+
+button{
+
+width:100%;
+padding:14px;
+background:#1976D2;
+color:white;
+border:none;
+border-radius:10px;
+font-size:17px;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#0D47A1;
+
+}
+
+.menu{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:25px;
+
+}
+
+.menu a{
+
+text-decoration:none;
+background:#1976D2;
+color:white;
+padding:12px;
+text-align:center;
+border-radius:10px;
+
+}
+
+.footer{
+
+margin-top:30px;
+text-align:center;
+color:#888;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="profile">
+
+<img src="https://via.placeholder.com/140"
+id="preview"
+class="avatar">
+
+<h1>My Profile</h1>
+
+<p>Edit your account information</p>
+
+<label>Profile Picture</label>
+
+<input
+type="file"
+accept="image/*"
+onchange="loadImage(event)">
+
+<label>Full Name</label>
+
+<input
+type="text"
+placeholder="Enter Your Name">
+
+<label>Email</label>
+
+<input
+type="email"
+placeholder="Enter Email">
+
+<label>Country</label>
+
+<input
+type="text"
+placeholder="Pakistan">
+
+<label>Bio</label>
+
+<input
+type="text"
+placeholder="Write Something About Yourself">
+
+<button>
+
+Save Profile
+
+</button>
+
+<div class="menu">
+
+<a href="/dashboard">Dashboard</a>
+
+<a href="/settings">Settings</a>
+
+<a href="/contact">Contact</a>
+
+<a href="/about">About</a>
+
+</div>
+
+<div class="footer">
+
+© 2026 MultyTime
+
+</div>
+
+</div>
+
+<script>
+
+function loadImage(event){
+
+document.getElementById("preview").src=
+URL.createObjectURL(event.target.files[0]);
+
+}
+
+</script>
+
+</body>
+</html>
