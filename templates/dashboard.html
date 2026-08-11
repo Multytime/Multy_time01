@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MultyTime Dashboard</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:#fff;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 25px;
+background:#111827;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.search{
+padding:10px;
+width:220px;
+border:none;
+border-radius:8px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1e293b;
+border-radius:15px;
+padding:20px;
+transition:.3s;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h2{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.card p{
+color:#cbd5e1;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 18px;
+background:#38bdf8;
+color:#000;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">MultyTime</div>
+<input class="search" placeholder="Search">
+</header>
+
+<div class="grid">
+
+<div class="card">
+<h2>Screen 1</h2>
+<p>Link / Notes</p>
+<a class="btn" href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>Screen 2</h2>
+<p>Link / Notes</p>
+<a class="btn" href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>Screen 3</h2>
+<p>Link / Notes</p>
+<a class="btn" href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>Screen 4</h2>
+<p>Link / Notes</p>
+<a class="btn" href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>Screen 5</h2>
+<p>Link / Notes</p>
+<a class="btn" href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>Screen 6</h2>
+<p>Link / Notes</p>
+<a class="btn" href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>Screen 7</h2>
+<p>Link / Notes</p>
+<a class="btn" href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>Screen 8</h2>
+<p>Link / Notes</p>
+<a class="btn" href="#">Open</a>
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 MultyTime Dashboard
+</div>
+
+</body>
+</html>
