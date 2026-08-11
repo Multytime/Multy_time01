@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | MultyTime</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#0f172a,#1e293b);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+
+}
+
+.container{
+
+width:100%;
+max-width:550px;
+background:white;
+border-radius:22px;
+padding:35px;
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.icon{
+
+font-size:70px;
+text-align:center;
+margin-bottom:15px;
+
+}
+
+h1{
+
+text-align:center;
+color:#1976D2;
+margin-bottom:12px;
+
+}
+
+.message{
+
+text-align:center;
+color:#555;
+font-size:17px;
+line-height:1.7;
+margin-bottom:30px;
+
+}
+
+.notice{
+
+background:#eef5ff;
+border-left:5px solid #1976D2;
+padding:18px;
+border-radius:12px;
+color:#333;
+margin-bottom:25px;
+
+}
+
+.buttons{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+
+}
+
+.buttons a{
+
+text-decoration:none;
+text-align:center;
+padding:14px;
+background:#1976D2;
+color:white;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.buttons a:hover{
+
+background:#0D47A1;
+
+}
+
+.footer{
+
+margin-top:30px;
+text-align:center;
+color:#777;
+font-size:14px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="icon">
+
+📩
+
+</div>
+
+<h1>Contact</h1>
+
+<p class="message">
+
+Thank you for visiting <b>MultyTime</b>.
+
+</p>
+
+<div class="notice">
+
+<b>Notice:</b><br><br>
+
+The Contact feature is currently unavailable.
+
+It will be available in a future update.
+
+Thank you for your patience.
+
+</div>
+
+<div class="buttons">
+
+<a href="/dashboard">
+
+Dashboard
+
+</a>
+
+<a href="/settings">
+
+Settings
+
+</a>
+
+</div>
+
+<div class="footer">
+
+Version 1.0 (First Release)
+
+<br><br>
+
+© 2026 MultyTime
+
+</div>
+
+</div>
+
+</body>
+
+</html>
