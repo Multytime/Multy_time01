@@ -108,7 +108,11 @@ font-size:14px;
 </head>
 
 <body>
-
+<div class="logo-container">
+    <img src="{{ url_for('static', filename='logo.png') }}"
+         alt="MultyTime Logo"
+         class="app-logo">
+</div>
 <div class="login-box">
 
 <h1>MultyTime</h1>
