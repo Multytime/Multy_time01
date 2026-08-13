@@ -1,67 +1,98 @@
-<div class="card">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - MultyTime</title>
 
-<h3 style="color:#1976D2;font-size:24px;text-align:center;margin-bottom:20px;">
-Developer Information
-</h3>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 
-<div style="background:#f8f9fc;padding:18px;border-radius:15px;margin-bottom:15px;">
+<body>
 
-<h4 style="color:#1976D2;margin-bottom:8px;">
-👨‍💻 Developer
-</h4>
+<div class="logo-container">
+    <img src="{{ url_for('static', filename='logo.png') }}"
+         alt="MultyTime Logo"
+         class="app-logo">
+</div>
 
-<p style="font-size:17px;color:#333;line-height:1.8;">
+<header>
+    <h1>About MultyTime</h1>
+</header>
 
-<b>H.M.A.S</b>
+<div class="container">
 
-</p>
+    <div class="card">
+
+        <h2>Welcome to MultyTime</h2>
+
+        <p>
+            MultyTime is a modern multi-screen web application designed to
+            help users open and organize multiple web pages in a clean,
+            simple and professional interface.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3 style="color:#1976D2;font-size:24px;text-align:center;margin-bottom:20px;">
+            Developer Information
+        </h3>
+
+        <div style="background:#f8f9fc;padding:18px;border-radius:15px;margin-bottom:15px;">
+
+            <h4 style="color:#1976D2;">👨‍💻 Developer</h4>
+
+            <p><b>H.M.A.S</b></p>
+
+        </div>
+
+        <div style="background:#f8f9fc;padding:18px;border-radius:15px;margin-bottom:15px;">
+
+            <h4 style="color:#1976D2;">🤖 Built with Assistance</h4>
+
+            <p>ChatGPT (OpenAI)</p>
+
+        </div>
+
+        <div style="background:#f8f9fc;padding:18px;border-radius:15px;margin-bottom:15px;">
+
+            <h4 style="color:#1976D2;">✨ AI Assistant</h4>
+
+            <p>ChatGPT</p>
+
+        </div>
+
+        <div style="background:#eef5ff;border-left:6px solid #1976D2;padding:20px;border-radius:15px;">
+
+            <h4 style="color:#1976D2;">📄 Project Information</h4>
+
+            <p>
+
+                <b>MultyTime</b> is a clean, modern and user-friendly web
+                application.
+
+                This project was developed and managed by
+                <b>H.M.A.S</b> with assistance from
+                <b>ChatGPT (OpenAI)</b>.
+
+                Our goal is to provide a fast, simple and professional
+                experience with continuous improvements in future versions.
+
+            </p>
+
+        </div>
+
+    </div>
 
 </div>
 
-<div style="background:#f8f9fc;padding:18px;border-radius:15px;margin-bottom:15px;">
+<footer>
+    © 2026 MultyTime • Developed by <b>H.M.A.S</b>
+</footer>
 
-<h4 style="color:#1976D2;margin-bottom:8px;">
-🤖 Built with Assistance
-</h4>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
-<p style="font-size:17px;color:#333;line-height:1.8;">
-
-ChatGPT (OpenAI)
-
-</p>
-
-</div>
-
-<div style="background:#f8f9fc;padding:18px;border-radius:15px;margin-bottom:15px;">
-
-<h4 style="color:#1976D2;margin-bottom:8px;">
-✨ AI Assistant
-</h4>
-
-<p style="font-size:17px;color:#333;line-height:1.8;">
-
-ChatGPT
-
-</p>
-
-</div>
-
-<div style="background:#eef5ff;border-left:6px solid #1976D2;padding:20px;border-radius:15px;">
-
-<h4 style="color:#1976D2;margin-bottom:12px;">
-📄 Project Information
-</h4>
-
-<p style="color:#444;line-height:1.9;font-size:16px;">
-
-<b>MultyTime</b> is a modern and user-friendly web application.
-
-This project was designed and managed by <b>H.M.A.S</b> with development assistance from <b>ChatGPT</b>.
-
-Our goal is to provide a clean, fast and professional experience for every user, with regular improvements and new features in future updates.
-
-</p>
-
-</div>
-
-</div>
+</body>
+</html>
