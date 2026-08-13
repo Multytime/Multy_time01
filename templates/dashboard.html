@@ -84,7 +84,11 @@ color:#94a3b8;
 </head>
 
 <body>
-
+<div class="logo-container">
+    <img src="{{ url_for('static', filename='logo.png') }}"
+         alt="MultyTime Logo"
+         class="app-logo">
+</div>
 <header>
 <div class="logo">MultyTime</div>
 <input class="search" placeholder="Search">
