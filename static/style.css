@@ -115,3 +115,19 @@ header{
 }
 
 }
+/* ===== MultiTime Logo ===== */
+
+.logo-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.app-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
