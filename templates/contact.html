@@ -20,7 +20,11 @@ font-family:Arial,sans-serif;
 }
 
 body{
-
+<div class="logo-container">
+    <img src="{{ url_for('static', filename='logo.png') }}"
+         alt="MultyTime Logo"
+         class="app-logo">
+</div>
 background:linear-gradient(135deg,#0f172a,#1e293b);
 display:flex;
 justify-content:center;
